@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+Brandon Bui, UMass Lowell Computer Science, bbui1@cs.uml.edu
+Copyright (c) 2025 by Brandon. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by BB on October 29, 2025 at 8:22 PM
+Webpage Purpose: Creates a dynamic multiplication table from the ranges of -50 to 50, providing an error message if otherwise
+-->
+
+<html>
+<head>
+    <title>Dynamic Multiplication Table</title>
+    <link rel = "stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id = "body">
+<div class = "header">
+    <h1 id = "heading"> Dynamic Multiplication Table </h1>
+</div>
+
+<div class = "container">
+    <h3>Please enter the table ranges</h3>
+    <form method = "post" name = "tableParameters"> 
+        <div>   
+            <label> Minimum Column Value: </label>
+            <input type = "number" name = "minColumn" id = "minColumn">
+        </div>
+        <br>
+        <div>
+            <label> Maximum Column Value: </label>
+            <input type = "number" name = "maxColumn" id = "maxColumn">
+        </div>
+        <br>
+        <div>
+            <label> Minimum Row Value: </label>
+            <input type = "number" name = "minRow" id = "minRow">
+        </div>
+        <br>
+        <div>
+            <label> Maximum Row Value: </label>
+            <input type = "number" name = "maxRow" id = "maxRow">
+        </div>
+        <br>
+        <button id = "button">Regenerate Table</button>
+    </form>
+</div>
+
+<div class = "container-table"></div>
+<script src = "js/main.js"></script>
+</body>
+</html>
